@@ -61,8 +61,7 @@ User perfomrs XpowerY funtionality action
 
 XpowerY verify 
     ${Value} =  Get Value  ${Results}
-    Run Keyword If  ${Value}  ==  32
-        Log To Console  ${Value}
+    Run Keyword If  ${Value}==32  Log To Console  ${Value}
 
 #YrootX
 
@@ -76,8 +75,7 @@ User perfomrs YrootX funtionality action
 
 YrootX verify 
     ${Value} =  Get Value  ${Results}
-    Run Keyword If  ${Value}  ==  4
-        Log To Console  ${Value}
+    Run Keyword If  ${Value}==4  Log To Console  ${Value}
 
 #Negative 
 
@@ -90,5 +88,4 @@ User perfomrs Negative funtionality action
 
 Negative verify 
     ${Value} =  Get Value  ${Results}
-    Run Keyword If  ${Value}  ==  -40
-        Log To Console  ${Value}
+    Run Keyword If  ${Value}==-40  Log To Console  ${Value}
